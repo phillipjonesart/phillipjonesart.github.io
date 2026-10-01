@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>stories of indigenous peoples around the world</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  /* page layout */
+  .page { max-width: 680px; margin: 0 auto; padding: 0 16px 48px; line-height: 1.55; font-family: Georgia, serif; }
+
+  /* animated title */
+  h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2.6rem;
+    text-align: center;
+    background: linear-gradient(90deg, #f6ecda 0%, #ffd97a 25%, #f6ecda 50%, #ffd97a 75%, #f6ecda 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 5s linear infinite;
+  }
+  @keyframes shine { to { background-position: 200% center; } }
+
+  .intro { text-align: center; font-style: italic; }
+
+  .art { text-align: center; animation: rise 1s ease both; }
+  .art:nth-of-type(2) { animation-delay: 0.2s; }
+  .art:nth-of-type(3) { animation-delay: 0.4s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+  /* picture frame */
+  .frame {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: min(560px, 100%);
+    margin: 32px auto 6px;
+    border: 48px solid #b8892e;
+    border-image: url(https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-louis_david,_marte_disarmato_da_venere,_1824,_picture_frame.png) 15% / 48px round;
+    filter: drop-shadow(0 12px 14px rgba(0,0,0,0.5));
+  }
+  .frame img { display: block; max-width: 100%; max-height: 62vh; width: auto; height: auto; }
+
+  .caption { font-size: 0.9rem; letter-spacing: 0.04em; margin: 4px 0 12px; opacity: 0.85; }
+  .page { text-shadow:0 1px 2px rgba(0,0,0,.45); } h1 { text-shadow:none; }
+ .art p.story { text-align: left; margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(246,236,218,0.35); vertical-align: top; }
+  th { border-bottom: 2px solid rgba(246,236,218,0.7); }
+  td:first-child { white-space: nowrap; font-weight: bold; }
+  a { color: #ffd97a; }
+  .credit { text-align: center; font-size: 0.75rem; opacity: 0.7; }
+  audio { display: block; margin: 14px auto 0; }
+</style>
+</head>
+
+<!-- background wallpaper: Morris, Acanthus -->
+<body style="background-color:#6b3f38; background-image:linear-gradient(rgba(107,63,56,0.78),rgba(107,63,56,0.78)),url(https://commons.wikimedia.org/wiki/Special:FilePath/Morris_Acanthus_Wallpaper_1875.jpg); background-size:auto,420px; color:#f6ecda;"> <div class="page">
+<!-- background music -->
+<audio controls loop preload="auto" onloadstart="this.volume=0.2; this.playbackRate=0.9">
+  <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Clair_de_lune_(Claude_Debussy)_Suite_bergamasque.ogg" type="audio/ogg">
+  Your browser does not support audio.
+</audio>
+<h1>Stories of Indigenous Peoples Around the World</h1>
+<p class="intro">Three stories from Mexico, the Great Plains and West Africa: one told by Aztec artists, one painted by a visitor, and one cast by the artists of Benin.</p>
+
+<div class="art">
+<!-- image (local copy: image1.jpg) -->
+<div class="frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Codex_Mendoza_folio_2r.jpg?width=1600" alt="Page 2 of the Codex Mendoza, showing the founding of Tenochtitlan" onerror="this.onerror=null;this.src=this.src.split('?')[0];"></div>
+<p class="caption">The founding of Tenochtitlan &middot; Codex Mendoza, about 1541</p>
+<p class="story">Aztec artists painted this page to tell how their capital began. According to legend, their god told a wandering people to settle where they saw an eagle perched on a cactus. They found it on a marshy island in a lake, and the blue lines show the water, cut by a cross into four districts, with the ten founding leaders sitting around it. In 1519, a Spanish soldier named Bernal D&iacute;az saw the city and wrote (adapted): "And some of our soldiers even asked whether it was not a dream."</p>
+</div>
+
+<div class="art">
+<!-- image (local copy: image2.jpg) -->
+<div class="frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Catlin_Painting_the_Portrait_of_Mah-to-toh-pa_-_Mandan_G-001457-20130123.jpg" alt="George Catlin painting the portrait of the Mandan chief Mah-to-toh-pa, Four Bears" onerror="this.onerror=null;this.src=this.src.split('?')[0];"></div>
+<p class="caption">Catlin Painting the Portrait of Mah-to-toh-pa (Four Bears), Mandan &middot; George Catlin, 1832</p>
+<p class="story">In 1832, the American artist George Catlin traveled up the Missouri River and painted the Mandan people, including this scene of himself painting the chief Four Bears. Five years later, smallpox, spread from a fur-trade steamboat, killed almost all the Mandan. Four Bears, dying, is said to have given a last speech, written down by a trader (adapted): "Ever since I can remember, I have loved the whites. I have never wronged a white man, and they have deceived me. Think of your wives and children, all dead or marked with the frightful marks of that deadly disease."</p>
+</div>
+
+<div class="art">
+<!-- image (local copy: image3.jpg) -->
+<div class="frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plaque_Equestrian_Oba_and_Attendants_MET_DP295360.jpg?width=1600" alt="Benin brass plaque of an Oba on horseback with attendants" onerror="this.onerror=null;this.src=this.src.split('?')[0];"></div>
+<p class="caption">Plaque of an Oba on horseback with attendants &middot; Edo artists, Kingdom of Benin, 1500s&ndash;1600s</p>
+<p class="story">Artists in the Kingdom of Benin, in what is now Nigeria, cast hundreds of brass plaques like this one to decorate the royal palace. They showed kings, warriors and foreigners, such as Portuguese traders. In 1897, a British military force burned Benin City and carried off thousands of these objects, which were sold to museums around the world. They are known as the Benin Bronzes, though most are actually brass, and many are now being returned to Nigeria.</p>
+</div>
+
+<h2>Fun Facts</h2>
+<table>
+  <tr><th>Subject</th><th>Fun Fact</th></tr>
+  <tr><td>The flag</td><td>The eagle on a cactus is on Mexico's flag today.</td></tr>
+  <tr><td>Four Bears</td><td>Fewer than 150 Mandan survived the 1837 smallpox epidemic.</td></tr>
+  <tr><td>Brass, not bronze</td><td>Most Benin "bronzes" are really brass.</td></tr>
+  <tr><td>Coming home</td><td>Germany and other countries have begun returning Benin Bronzes to Nigeria.</td></tr>
+</table>
+
+<!-- link to the next page -->
+<p><a href="page_1.html">Go to page 1</a></p>
+
+<p class="credit">Wallpaper: Morris, Acanthus. Frame: from Jacques-Louis David, Mars Disarmed by Venus (1824). Music: Debussy, Clair de lune. All via Wikimedia Commons.</p>
+</div>
+</body>
+</html>

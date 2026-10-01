@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>war around the world</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  /* page layout */
+  .page { max-width: 680px; margin: 0 auto; padding: 0 16px 48px; line-height: 1.55; font-family: Georgia, serif; }
+
+  /* animated title */
+  h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2.6rem;
+    text-align: center;
+    background: linear-gradient(90deg, #f6ecda 0%, #ffd97a 25%, #f6ecda 50%, #ffd97a 75%, #f6ecda 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 5s linear infinite;
+  }
+  @keyframes shine { to { background-position: 200% center; } }
+
+  .intro { text-align: center; font-style: italic; }
+
+  .art { text-align: center; animation: rise 1s ease both; }
+  .art:nth-of-type(2) { animation-delay: 0.2s; }
+  .art:nth-of-type(3) { animation-delay: 0.4s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+  /* picture frame */
+  .frame {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: min(560px, 100%);
+    margin: 32px auto 6px;
+    border: 48px solid #b8892e;
+    border-image: url(https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-louis_david,_marte_disarmato_da_venere,_1824,_picture_frame.png) 15% / 48px round;
+    filter: drop-shadow(0 12px 14px rgba(0,0,0,0.5));
+  }
+  .frame img { display: block; max-width: 100%; max-height: 62vh; width: auto; height: auto; }
+
+  .caption { font-size: 0.9rem; letter-spacing: 0.04em; margin: 4px 0 12px; opacity: 0.85; }
+  .page { text-shadow:0 1px 2px rgba(0,0,0,.45); } h1 { text-shadow:none; }
+ .art p.story { text-align: left; margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(246,236,218,0.35); vertical-align: top; }
+  th { border-bottom: 2px solid rgba(246,236,218,0.7); }
+  td:first-child { white-space: nowrap; font-weight: bold; }
+  a { color: #ffd97a; }
+  .credit { text-align: center; font-size: 0.75rem; opacity: 0.7; }
+  audio { display: block; margin: 14px auto 0; }
+</style>
+</head>
+
+<!-- background wallpaper: Morris, Trellis -->
+<body style="background-color:#5a4332; background-image:linear-gradient(rgba(90,67,50,0.78),rgba(90,67,50,0.78)),url(https://commons.wikimedia.org/wiki/Special:FilePath/Trellis_MET_DT255077.jpg); background-size:auto,360px; color:#f6ecda;"> <div class="page">
+<!-- background music -->
+<audio controls loop preload="auto" onloadstart="this.volume=0.2; this.playbackRate=0.9">
+  <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg" type="audio/ogg">
+  Your browser does not support audio.
+</audio>
+<h1>War Around the World</h1>
+<p class="intro">Three battles on three continents, each seen through very different eyes.</p>
+
+<div class="art">
+<!-- image (local copy: image1.jpg) -->
+<div class="frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Turner_-_The_Battle_of_Trafalgar,_21_October_1805,_1822%E2%80%931824,_BHC0565.jpg?width=1600" alt="The Battle of Trafalgar, painting by J. M. W. Turner" onerror="this.onerror=null;this.src=this.src.split('?')[0];"></div>
+<p class="caption">The Battle of Trafalgar, 21 October 1805 &middot; J. M. W. Turner, 1822&ndash;24</p>
+<p class="story">Off the coast of Spain, Admiral Nelson led 27 British ships against 33 French and Spanish ones. Instead of lining up, he sailed straight at the enemy and cut through their line. Before the fighting, he had a signal flown from his flagship, HMS Victory: "England expects that every man will do his duty." Hours later a sniper's bullet killed him, and he told Captain Hardy, "Thank God I have done my duty." Turner painted the scene almost twenty years later, and sailors complained that he had squeezed several moments of the battle into one picture.</p>
+</div>
+
+<div class="art">
+<!-- image (local copy: image2.jpg) -->
+<div class="frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mokoshuraiekotoba.jpg" alt="The Mongol Invasion Scroll, Japan, about 1293" onerror="this.onerror=null;this.src=this.src.split('?')[0];"></div>
+<p class="caption">The Mongol invasion of Japan, 1274 &middot; the Mongol Invasion Scroll, about 1293</p>
+<p class="story">A Japanese samurai named Takezaki Suenaga had this scroll painted to prove how bravely he fought when a Mongol fleet invaded Japan in 1274. He hoped the government would reward him, and he even traveled to Kamakura to ask in person. The scroll shows him charging the Mongol warriors while an iron bomb explodes in the air, one of the first pictures of gunpowder weapons in battle. In 1281, a second Mongol fleet was wrecked by a typhoon, which the Japanese called the "divine wind," or kamikaze.</p>
+</div>
+
+<div class="art">
+<!-- image (local copy: image3.jpg) -->
+<div class="frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alphonse_de_Neuville_-_The_defence_of_Rorke's_Drift_1879_-_Google_Art_Project.jpg?width=1600" alt="The Defence of Rorke's Drift, painting by Alphonse de Neuville, 1880" onerror="this.onerror=null;this.src=this.src.split('?')[0];"></div>
+<p class="caption">The Defence of Rorke's Drift, 1879 &middot; Alphonse de Neuville, 1880</p>
+<p class="story">On 22 January 1879, about 150 British soldiers defended a small mission station against several thousand Zulu warriors, holding out through the night behind walls of biscuit boxes and sacks of grain. Eleven of them won the Victoria Cross, the most for a single battle. The fight came hours after a Zulu army destroyed a British column at Isandlwana, and Britain had invaded the Zulu kingdom only days earlier, after an ultimatum no king could accept. By July the British had won, and the Zulu kingdom was broken up.</p>
+</div>
+
+<h2>Fun Facts</h2>
+<table>
+  <tr><th>Subject</th><th>Fun Fact</th></tr>
+  <tr><td>Trafalgar</td><td>Nelson wanted "confides," but "expects" was a single flag in the signal book.</td></tr>
+  <tr><td>The scroll</td><td>It is one of the first pictures of an exploding bomb in battle.</td></tr>
+  <tr><td>Rorke's Drift</td><td>Eleven soldiers won the Victoria Cross there, the most for a single battle.</td></tr>
+  <tr><td>Divine wind</td><td>Typhoons wrecked the Mongol fleets, and Japan called them kamikaze.</td></tr>
+</table>
+
+<!-- link to the next page -->
+<p><a href="page_2.html">Go to page 2</a></p>
+
+<p class="credit">Wallpaper: Morris, Trellis. Frame: from Jacques-Louis David, Mars Disarmed by Venus (1824). Music: Satie, Gymnopedie No. 1. All via Wikimedia Commons.</p>
+</div>
+</body>
+</html>
